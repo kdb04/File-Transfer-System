@@ -1,2 +1,2 @@
-# CN Mini-Project - Sem 4
-Cloud Storage System using Socket Programming in Python
+# CN Mini-Project - 
+File Transfer System using Socket Programming in Python
