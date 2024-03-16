@@ -6,8 +6,8 @@ KEYFILE = 'server_key.pem'
 
 
 server_port=17000
-serverSocket=socket(AF_INET,SOCK_STREAM) #welcoming socket
-serverSocket.bind(("",server_port)) #"" means it will listen to any connection attempts
+serverSocket=socket(AF_INET,SOCK_STREAM)
+serverSocket.bind(("",server_port))
 
 
 
@@ -34,10 +34,6 @@ def handle_client(channelSocket):
     if c == 1:
         file_name = channelSocket.recv(100).decode()
         print(file_name)
-
-        #with open("table.txt", "a") as f_main:
-            #f_main.write(file_name)
-
 
         with open(file_name, "w") as f:
             while True:
